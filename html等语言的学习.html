@@ -1,15 +1,299 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8"> 
-<title>易可欣的学习网站</title> 
+<meta charset="utf-8">
+<title>Xbox|官方网站</title>
 <style>
-    p:first-child{
-        color: #999999;
+.topstyle
+{
+    width: 7%;
+    height: 7%;
+    margin: 20px;
+
+
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+ul.topstyle_ul
+{
+    list-style-type:none;
+	margin:0;
+	padding:0;
+	padding-top:0px;
+	padding-bottom:10px;
+    text-align:left ;
+}
+
+li.topstyle_li
+{
+    display:inline;
+    margin:24px;
+    font-size: 88%;
+    text-align: center;
+    font-size: 60%
+    a:hover{
+
     }
-    </style>
-</head>
+}
+
  
+li a {
+    display: block;
+    color: rgb(5, 4, 4);
+    padding: 3px 28px;
+    text-decoration: none;
+    font-size: 15px;
+}
+ 
+
+/* 鼠标移动到选项上修改背景颜色 */
+li a:hover {
+    background-color: rgb(233, 227, 227);
+    color: rgb(5, 4, 4);
+}
+
+
+li.smallimg{
+    display: inline;
+}
+
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;}
+.mySlides {display:none}
+ 
+/* 幻灯片容器 */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+ 
+/* 下一张 & 上一张 按钮 */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+ 
+/* 定位 "下一张" 按钮靠右 */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+ 
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+ 
+/* 标题文本 */
+.text {
+  color: #f2f2f2;
+  font-size: 30px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 100px;
+  width: 100%;
+  text-align: center;
+}
+
+.text1 {
+  color: #f2f2f2;
+  font-size: 50px;
+  font-family: 'Times New Roman', Times, serif
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 150px;
+  width: 100%;
+  text-align: center;
+}
+ 
+ 
+/* 标记符号 */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+ 
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+</style>
+</head>
 <body>
-    </body>
-    </html>
+        
+
+        <div class="slideshow-container">
+                <div class="mySlides fade">
+                  <img src="https://compass-ssl.xbox.com/assets/54/f2/54f2ef99-ab48-43f6-9f8f-015c8d24c8f0.jpg?n=Jump_In_Screenshot.jpg" style="width:100%">
+                  <div class="text1">Jump in。</div> 
+                  <div class="text">Xbox 让游戏玩家走到一起。这是我们对你的邀请。</div>
+                
+                </div>
+               
+                <div class="mySlides fade">
+                  <img src="https://compass-ssl.xbox.com/assets/05/11/05113f8b-6f78-4230-8520-3089e6550bc7.jpg?n=Hero-1920x720-Mockup.jpg" style="width:100%">
+                  <div class="text">文本 2</div>
+                </div>
+               
+                <div class="mySlides fade">
+                  <img src="https://compass-ssl.xbox.com/assets/bf/3d/bf3d90d1-b573-4eb0-a20f-3b330a387d70.jpg?n=784523_Superhero-1084_1920x720.jpg" style="width:100%">
+                  <div class="text">文本 3</div>
+                </div>
+               
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+              </div>
+              <br>
+               
+              <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+              </div>
+        
+    <ul class="topstyle_ul">
+    <a href="https://www.microsoft.com/"  ><img class="topstyle"  src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31" alt="微软公司"></a>
+<a href="http://www.xbox.com/?xr=mebarnav"  ><img class="topstyle"  src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RW4ESm?ver=c63e&_=4" alt="xbox"></a>
+<div class="dropdown">
+        <u><li class="topstyle_li"><span>主机</span></li></u>
+        <div class="dropdown-content">
+          <li><a href="https://www.xbox.com/zh-CN/xbox-one?xr=shellnav"><p>主机</p></a></li>
+          <a href="http://www.xbox.com/zh-CN/xbox-one-x?xr=shellnav"><p>Xbox One X</p></a>
+          <a href="http://www.xbox.com/zh-CN/xbox-one-s?xr=shellnav"><p>Xbox One S</p></a>
+          <a href="https://www.xbox.com/zh-CN/xbox-one/consoles?xr=shellnav"><p>购买主机</p></a>
+        </div>
+      </div>
+
+
+      <div class="dropdown">
+            <u><li class="topstyle_li"><span>游戏     </span></li></u>
+            <div class="dropdown-content">
+                    <a href="http://www.xbox.com/zh-CN/games?xr=shellnav"><p>游戏</p></a>
+                    <a href="https://www.xbox.com/zh-CN/games/xbox-one?xr=shellnav"><p>Xbox One 游戏</p></a>
+              <a href="https://www.xbox.com/zh-cn/games/xbox-one/xbox-one-x-enhanced-list?xr=shellnav"><p>Xbox One X 性能强化游戏</p></a>
+              <a href="https://www.xbox.com/zh-cn/xbox-one/backward-compatibility?xr=shellnav"><p>向下兼容游戏</p></a>
+              <p>Xbox Play Anywhere 游戏</p>
+              <p>Windows 10 游戏</p>
+              <p>兑换代码</p>
+            </div>
+          </div>
+<div class="dropdown">
+       <u><li class="topstyle_li"><span>Xbox Live 会员       </span></li></u>
+        <div class="dropdown-content">
+          <p>关于Xbox Live 会员</p></a>
+          <p>Windows 10里的Xbox应用</p></a>
+          <p>Mixer</p>
+          <p>百视通</p>
+        </div>
+      </div>
+      <div class="dropdown">
+           <u> <li class="topstyle_li"> <span>配件</span></li></u>
+            <div class="dropdown-content">
+              <p>配件</p>
+              
+            </div>
+          </div>
+          <div class="dropdown">
+               <u><li class="topstyle_li"><span>在Windows上游戏     </span></li></u>
+                <div class="dropdown-content">
+                  <p>Windows 10里的Xbox应用</p>
+                  <p>在Windows 10上游戏</p>
+                </div>
+              </div>
+              <div class="dropdown">
+                    <u><li class="topstyle_li"><span>Xbox 支持    </span></li></u>
+                    <div class="dropdown-content">
+                      <p>所有支持</p>
+                      <p>Xbox One</p>
+                      <p>基于Windows 10里的Xbox</p>
+                      <p>游戏</p>
+                      <p>账单</p>
+                      <p>我的账户</p>
+                      <p>其他设备上的Xbox</p>
+                      <p>Mixer</p>
+                      <p>Xbox论坛</p>
+                      <p>错误和状态代码搜索</p>
+                      <p>Xbox Live 状态</p>
+                    </div>
+                  </div>
+</ul>
+
+
+//中间的几个小图标
+<ul style="width:10%; height:10%;">
+<li class="smallimg"><img src="https://compass-ssl.xbox.com/assets/59/b5/59b55110-f43c-483c-aa6d-891ed8a3848a.svg?n=Homepage-FY18_Home-Icons-0_Consoles_72x56.svg" srcset="https://compass-ssl.xbox.com/assets/59/b5/59b55110-f43c-483c-aa6d-891ed8a3848a.svg?n=Homepage-FY18_Home-Icons-0_Consoles_72x56.svg"></li>
+<li class="smallimg"><img src="https://compass-ssl.xbox.com/assets/01/88/0188d0c0-ded9-494f-bc02-5b91459d91a3.svg?n=Homepage-FY18_Home-Icons-0_Games_72x56.svg" srcset="https://compass-ssl.xbox.com/assets/01/88/0188d0c0-ded9-494f-bc02-5b91459d91a3.svg?n=Homepage-FY18_Home-Icons-0_Games_72x56.svg"></li>
+<li class="smallimg"><img src="https://compass-ssl.xbox.com/assets/8b/76/8b768a46-9bc2-4f47-b019-fbc12e57f39d.svg?n=Homepage-FY18_Home-Icons-0_Accessories_72x56.svg"  srcset="https://compass-ssl.xbox.com/assets/8b/76/8b768a46-9bc2-4f47-b019-fbc12e57f39d.svg?n=Homepage-FY18_Home-Icons-0_Accessories_72x56.svg"></li>
+<li class="smallimg"><img src="https://compass-ssl.xbox.com/assets/16/d6/16d60dd2-3e50-4df9-a0e3-21ccce5217ce.svg?n=Homepage-FY18_Home-Icons-0_Community_72x56.svg" srcset="https://compass-ssl.xbox.com/assets/16/d6/16d60dd2-3e50-4df9-a0e3-21ccce5217ce.svg?n=Homepage-FY18_Home-Icons-0_Community_72x56.svg"></li>
+
+</ul>
+//下面的游戏图片
+<img src="https://compass-ssl.xbox.com/assets/f5/a7/f5a7cd0f-3803-40fd-a6ad-06685409b896.jpg?n=OWotW_Large-tout-0_1083x1222.jpg" alt="精灵与萤火意志" style="width:49.5%; height: 50%; float: left;">
+<img src="https://compass-ssl.xbox.com/assets/8d/52/8d52e1db-777a-4ba5-954e-cbcb56e5dd8e.png?n=Clear-space_8x3.png" alt="绝地求生" style="width:25%;height:380px;float:right;">
+<img src="https://compass-ssl.xbox.com/assets/10/e6/10e62455-459d-48f7-ba95-4ac87dc22ad6.jpg?n=SoT.jpg" alt="盗贼之海"  style="width:50% ; height:50%; float: right">
+<img src="https://compass-ssl.xbox.com/assets/8d/52/8d52e1db-777a-4ba5-954e-cbcb56e5dd8e.png?n=Clear-space_8x3.png" alt="超级幸运狐" style="width:25%;height:380px;float:left;">
+<img src="https://www.xbox.com/xbox-one" alt="游戏机"  style="width:50% height: 50%; position: relative;" >
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+ 
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+ 
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+ 
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html>
