@@ -7,14 +7,15 @@
 .topstyle
 {
     width: 7%;
-    height: 7%;
-    margin: 20px;
-
+    height: 2%;
+    margin: 0px;
+    
 
 }
 .dropdown {
   position: relative;
   display: inline-block;
+  z-index:1;
 }
 .dropdown-content {
   display: none;
@@ -36,6 +37,7 @@ ul.topstyle_ul
 	padding-top:0px;
 	padding-bottom:10px;
     text-align:left ;
+
 }
 
 li.topstyle_li
@@ -44,11 +46,8 @@ li.topstyle_li
     margin:24px;
     font-size: 88%;
     text-align: center;
-    font-size: 60%
-    a:hover{
-
-    }
 }
+
 
  
 li a {
@@ -75,6 +74,16 @@ li.smallimg{
 body {font-family: Verdana,sans-serif;}
 .mySlides {display:none}
  
+.button1{
+background-color:green; 
+color:white; 
+font: bold; 
+width: 120px; 
+height:60px;
+
+}
+
+
 /* 幻灯片容器 */
 .slideshow-container {
   max-width: 100%;
@@ -109,27 +118,80 @@ body {font-family: Verdana,sans-serif;}
 }
  
 /* 标题文本 */
-.text {
+.text1 {
   color: #f2f2f2;
   font-size: 30px;
   padding: 8px 12px;
   position: absolute;
-  bottom: 100px;
+  bottom: 180px;
   width: 100%;
   text-align: center;
+  font-family:"Segoe UI",SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-.text1 {
+
+
+.text2 {
   color: #f2f2f2;
   font-size: 50px;
-  font-family: 'Times New Roman', Times, serif
+  font-family:"Segoe UI",SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
   padding: 8px 12px;
   position: absolute;
-  bottom: 150px;
+  bottom: 230px;
   width: 100%;
   text-align: center;
+
 }
  
+
+.text3 {
+  color: black;
+  font-size: 60px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 280px;
+  width: 100%;
+  left: 50px;
+  text-align: left;
+  font-family:"Segoe UI",SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+
+.text4 {
+  color: black;
+  font-size: 40px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 220px;
+  width: 100%;
+  left: 50px;
+  text-align: left;
+  font-family:"Segoe UI",SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.text6 {
+  color: black;
+  font-size: 40px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 170px;
+  width: 100%;
+  left: 50px;
+  text-align: left;
+  font-family:"Segoe UI",SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.text5 {
+  color: #f2f2f2;
+  font-size: 55px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 200px;
+  right: 50px;
+  width: 100%;
+  text-align:right;
+  font-family:"Segoe UI",SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
  
 /* 标记符号 */
 .dot {
@@ -141,50 +203,59 @@ body {font-family: Verdana,sans-serif;}
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+
 }
  
-.active, .dot:hover {
+.active.dot:hover {
   background-color: #717171;
 }
 
+.box_smallimg
+{
+  display: flex;
+  widows: 10px; 
+  height:10px;
+  flex-direction: row;
+  
+}
 
+.box_button
+{
+	width:100%;
+	height:200px;
+	display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+
+.line_button
+{
+  color: white; 
+  margin-top:0px;
+  font-size: 13px;
+  padding:3px 0 1px;
+  font-weight:400;
+}
+
+div.move{
+  position:relative;
+	animation:mymove 5s infinite;
+  animation-iteration-count:1;
+}
+
+@keyframes mymove
+{
+	from {top:200px;}
+	to {top:0px;}
+}
 </style>
 </head>
 <body>
         
-
-        <div class="slideshow-container">
-                <div class="mySlides fade">
-                  <img src="https://compass-ssl.xbox.com/assets/54/f2/54f2ef99-ab48-43f6-9f8f-015c8d24c8f0.jpg?n=Jump_In_Screenshot.jpg" style="width:100%">
-                  <div class="text1">Jump in。</div> 
-                  <div class="text">Xbox 让游戏玩家走到一起。这是我们对你的邀请。</div>
-                
-                </div>
-               
-                <div class="mySlides fade">
-                  <img src="https://compass-ssl.xbox.com/assets/05/11/05113f8b-6f78-4230-8520-3089e6550bc7.jpg?n=Hero-1920x720-Mockup.jpg" style="width:100%">
-                  <div class="text">文本 2</div>
-                </div>
-               
-                <div class="mySlides fade">
-                  <img src="https://compass-ssl.xbox.com/assets/bf/3d/bf3d90d1-b573-4eb0-a20f-3b330a387d70.jpg?n=784523_Superhero-1084_1920x720.jpg" style="width:100%">
-                  <div class="text">文本 3</div>
-                </div>
-               
-                <a class="prev" onclick="plusSlides(-1)">❮</a>
-                <a class="next" onclick="plusSlides(1)">❯</a>
-              </div>
-              <br>
-               
-              <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span> 
-                <span class="dot" onclick="currentSlide(2)"></span> 
-                <span class="dot" onclick="currentSlide(3)"></span> 
-              </div>
         
     <ul class="topstyle_ul">
     <a href="https://www.microsoft.com/"  ><img class="topstyle"  src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31" alt="微软公司"></a>
-<a href="http://www.xbox.com/?xr=mebarnav"  ><img class="topstyle"  src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RW4ESm?ver=c63e&_=4" alt="xbox"></a>
+    <a href="http://www.xbox.com/?xr=mebarnav"  ><img class="topstyle"  src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RW4ESm?ver=c63e&_=4" alt="xbox"></a>
 <div class="dropdown">
         <u><li class="topstyle_li"><span>主机</span></li></u>
         <div class="dropdown-content">
@@ -250,22 +321,54 @@ body {font-family: Verdana,sans-serif;}
 </ul>
 
 
-//中间的几个小图标
-<ul style="width:10%; height:10%;">
-<li class="smallimg"><img src="https://compass-ssl.xbox.com/assets/59/b5/59b55110-f43c-483c-aa6d-891ed8a3848a.svg?n=Homepage-FY18_Home-Icons-0_Consoles_72x56.svg" srcset="https://compass-ssl.xbox.com/assets/59/b5/59b55110-f43c-483c-aa6d-891ed8a3848a.svg?n=Homepage-FY18_Home-Icons-0_Consoles_72x56.svg"></li>
-<li class="smallimg"><img src="https://compass-ssl.xbox.com/assets/01/88/0188d0c0-ded9-494f-bc02-5b91459d91a3.svg?n=Homepage-FY18_Home-Icons-0_Games_72x56.svg" srcset="https://compass-ssl.xbox.com/assets/01/88/0188d0c0-ded9-494f-bc02-5b91459d91a3.svg?n=Homepage-FY18_Home-Icons-0_Games_72x56.svg"></li>
-<li class="smallimg"><img src="https://compass-ssl.xbox.com/assets/8b/76/8b768a46-9bc2-4f47-b019-fbc12e57f39d.svg?n=Homepage-FY18_Home-Icons-0_Accessories_72x56.svg"  srcset="https://compass-ssl.xbox.com/assets/8b/76/8b768a46-9bc2-4f47-b019-fbc12e57f39d.svg?n=Homepage-FY18_Home-Icons-0_Accessories_72x56.svg"></li>
-<li class="smallimg"><img src="https://compass-ssl.xbox.com/assets/16/d6/16d60dd2-3e50-4df9-a0e3-21ccce5217ce.svg?n=Homepage-FY18_Home-Icons-0_Community_72x56.svg" srcset="https://compass-ssl.xbox.com/assets/16/d6/16d60dd2-3e50-4df9-a0e3-21ccce5217ce.svg?n=Homepage-FY18_Home-Icons-0_Community_72x56.svg"></li>
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <img src="https://compass-ssl.xbox.com/assets/54/f2/54f2ef99-ab48-43f6-9f8f-015c8d24c8f0.jpg?n=Jump_In_Screenshot.jpg" style="width:100%">
+    <div class="text2">Jump in。</div> 
+    <div class="text1">Xbox 让游戏玩家走到一起。这是我们对你的邀请。</div>
+    <button class="button1" onclick="window.location.href = 'https://www.xbox.com/zh-CN/jumpin'">了解详情 ></button>
+  </div>
+ 
+  <div class="mySlides fade">
+    <img src="https://compass-ssl.xbox.com/assets/05/11/05113f8b-6f78-4230-8520-3089e6550bc7.jpg?n=Hero-1920x720-Mockup.jpg" style="width:100%">
+    <div class="text3">购惊喜， 畅欢乐</div>
+    <div class="text4">双十一狂欢，Xbox主机以旧</div>
+    <div class="text6">换新享100元额外优惠</div>
+  </div>
+ 
+  <div class="mySlides fade">
+    <img src="https://compass-ssl.xbox.com/assets/bf/3d/bf3d90d1-b573-4eb0-a20f-3b330a387d70.jpg?n=784523_Superhero-1084_1920x720.jpg" style="width:100%">
+    <div class="text5">极限竞速：地平线4</div>
+  </div>
+ 
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+</div>
+<br>
+ 
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+
+ 
+<ul class="box_smallimg">
+<li class="smallimg"><img src="https://compass-ssl.xbox.com/assets/59/b5/59b55110-f43c-483c-aa6d-891ed8a3848a.svg?n=Homepage-FY18_Home-Icons-0_Consoles_72x56.svg" ></li>
+<li class="smallimg"><img src="https://compass-ssl.xbox.com/assets/01/88/0188d0c0-ded9-494f-bc02-5b91459d91a3.svg?n=Homepage-FY18_Home-Icons-0_Games_72x56.svg" ></li>
+<li class="smallimg"><img src="https://compass-ssl.xbox.com/assets/8b/76/8b768a46-9bc2-4f47-b019-fbc12e57f39d.svg?n=Homepage-FY18_Home-Icons-0_Accessories_72x56.svg"></li>
+<li class="smallimg"><img src="https://compass-ssl.xbox.com/assets/16/d6/16d60dd2-3e50-4df9-a0e3-21ccce5217ce.svg?n=Homepage-FY18_Home-Icons-0_Community_72x56.svg" ></li>
 
 </ul>
-//下面的游戏图片
-<img src="https://compass-ssl.xbox.com/assets/f5/a7/f5a7cd0f-3803-40fd-a6ad-06685409b896.jpg?n=OWotW_Large-tout-0_1083x1222.jpg" alt="精灵与萤火意志" style="width:49.5%; height: 50%; float: left;">
-<img src="https://compass-ssl.xbox.com/assets/8d/52/8d52e1db-777a-4ba5-954e-cbcb56e5dd8e.png?n=Clear-space_8x3.png" alt="绝地求生" style="width:25%;height:380px;float:right;">
+
+<img src="https://compass-ssl.xbox.com/assets/f5/a7/f5a7cd0f-3803-40fd-a6ad-06685409b896.jpg?n=OWotW_Large-tout-0_1083x1222.jpg" alt="精灵与萤火意志" style="width:49.5%; height: 50%; float: left;  >
+<img src="https://compass-ssl.xbox.com/assets/cb/f3/cbf3af1c-7df0-4f93-ad81-1684df54679d.jpg?n=PUBG-1067x600.jpg"  alt="绝地求生" style="width:25%;height:380px;float:right;">
+<div class="move">
 <img src="https://compass-ssl.xbox.com/assets/10/e6/10e62455-459d-48f7-ba95-4ac87dc22ad6.jpg?n=SoT.jpg" alt="盗贼之海"  style="width:50% ; height:50%; float: right">
-<img src="https://compass-ssl.xbox.com/assets/8d/52/8d52e1db-777a-4ba5-954e-cbcb56e5dd8e.png?n=Clear-space_8x3.png" alt="超级幸运狐" style="width:25%;height:380px;float:left;">
-<img src="https://www.xbox.com/xbox-one" alt="游戏机"  style="width:50% height: 50%; position: relative;" >
-
-
+<img src="https://compass-ssl.xbox.com/assets/ef/43/ef43acc1-1223-4035-94b9-5c33cc639f72.jpg?n=Lucky.jpg" alt="超级幸运狐" style="width:25%;height:380px;float:left;">
+<img src="https://compass-ssl.xbox.com/assets/e7/d4/e7d46aea-90d0-4bf1-9544-cc85d59f6d18.jpg?n=Xbox-Family_Home-Hero-0_FY-18-X1X-Lead_1067x667_02.jpg" style="width:60%; height: 45%; float: left;"> 
+</div>
 <script>
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -293,7 +396,21 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block"; 
   dots[slideIndex-1].className += " active";
 }
+
+
+
+
 </script>
+
+
+
+<div class="box_button">
+<h4 class="line_button"><em> * 以上所提及各项游戏特性和配置要求仍在开发中，发售前或有所改变。实际发售的游戏受限于中国法律所要求的审批。<br></em></h4>
+<h4 class="line_button"><em>- 游戏初始下载至主机需要 Xbox Live 及宽带网络。<br></em></h4>
+<h4 class="line_button"><em>- 需特定应用程序进行 4K 视频流传输，请参阅 Xbox.com。某些应用程序需要向内容提供商进行额外订阅和／或有其它要求，请参阅 xbox.com/live。<br></em></h4>
+<h4 class="line_button"><em>- HDR 高动态范围功能仅限支持的游戏与电视可使用。<br></em></h4>
+</div>
+
 
 </body>
 </html>
