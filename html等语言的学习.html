@@ -66,8 +66,106 @@ li a:hover {
 }
 
 
-li.smallimg{
-    display: inline;
+div.word_container
+{
+	width:40em;
+	border:hidden;
+    text-align: center;
+    position: absolute;
+    top: 650px;
+    left: 25%;
+}
+
+div.img_container
+{
+	width:40em;
+	border:hidden;
+    text-align: center;
+    position: absolute;
+    top: 550px;
+    left: 25%;
+}
+div.box
+{
+	box-sizing:border-box;
+	width:20%;
+	border:none;
+	float:left;
+}
+
+
+#example1 {
+    background-image: url(https://compass-ssl.xbox.com/assets/f5/a7/f5a7cd0f-3803-40fd-a6ad-06685409b896.jpg?n=OWotW_Large-tout-0_1083x1222.jpg);
+    background-size: 600px 700px;
+    background-repeat: no-repeat;
+    background-origin: padding-box;
+    box-sizing: border-box;
+    width: 600px;
+    height: 700px;
+    float: left;
+    position: absolute;
+    width: 49%;
+    top: 700px;
+}
+
+h5.elf
+{
+  color: white;
+  position: absolute;
+  bottom: 90px;
+  left:50px;
+  font-size: 40px;
+}
+
+p.elf
+{
+  color: white;
+  position: absolute;
+  bottom: 90px;
+  left: 55px;
+}
+
+#example2 {
+    background-image: url(https://compass-ssl.xbox.com/assets/10/e6/10e62455-459d-48f7-ba95-4ac87dc22ad6.jpg?n=SoT.jpg);
+    background-size: 600px 700px;
+    background-repeat: no-repeat;
+    background-origin: padding-box;
+    box-sizing: border-box;
+    width: 600px;
+    height: 700px;
+    float: right;
+    position: absolute;
+    width: 50%;
+    top: 1100px;
+    right: 0px;
+    
+}
+
+h1.thief
+{
+  color: white;
+  position: absolute;
+  bottom: 90px;
+  right: 400px;
+  font-size: 40px;
+}
+
+p.thief
+{
+  color: white;
+  position: absolute;
+  bottom: 60px;
+  right: 480px;
+}
+
+
+
+div.botton_word
+{
+  font-family:"Segoe UI",SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size:12px;
+  color:green;
+  text-decoration: underline;
 }
 
 * {box-sizing:border-box}
@@ -77,9 +175,38 @@ body {font-family: Verdana,sans-serif;}
 .button1{
 background-color:green; 
 color:white; 
-font: bold; 
+font: 1em sans-serif;
 width: 120px; 
 height:60px;
+position: absolute;
+left: 550px;
+top: 350px;
+
+}
+
+.button2{
+background-color:green; 
+color:white; 
+font: 1em sans-serif;
+width: 180px; 
+height:60px;
+position: absolute;
+left: 120px;
+top: 320px;
+
+
+}
+
+.button3{
+background-color:green; 
+color:white; 
+font: 1em sans-serif;
+width: 120px; 
+height:60px;
+position: absolute;
+right: 150px;
+top: 280px;
+
 
 }
 
@@ -226,6 +353,8 @@ height:60px;
 	display: flex;
   flex-direction: column;
   background-color: black;
+  position: absolute;
+  bottom: 2000px;
 }
 
 .line_button
@@ -237,7 +366,8 @@ height:60px;
   font-weight:400;
 }
 
-div.move{
+
+/*div.move{
   position:relative;
 	animation:mymove 5s infinite;
   animation-iteration-count:1;
@@ -248,6 +378,64 @@ div.move{
 	from {top:200px;}
 	to {top:0px;}
 }
+*/
+
+
+/*div.onmouseover1 img
+{
+	background-size:auto 100% !important;
+}
+
+
+div.onmouseover1 img:hover
+{
+	background-size:auto 120% !important;
+}
+*/
+
+/*div.onmouseover2 img
+{
+	width:25%;
+	height:380px;
+	transition-property:width,height;
+	transition-duration:2s;
+
+}
+
+div.onmouseover2 img:hover
+{
+	width:28%;
+    height:400px;
+}
+
+*/
+
+
+/*div.onmouseover3 img
+{
+	width:60%;
+	height:45%;
+	transition-property:width,height;
+	transition-duration:2s;
+
+}
+
+div.onmouseover3 img :hover
+{
+	width:px;
+    height:120px;
+}
+*/
+
+
+body
+{
+  font-family:"Segoe UI",SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size:15px;
+  color:#000;
+}
+
+
 </style>
 </head>
 <body>
@@ -321,6 +509,10 @@ div.move{
 </ul>
 
 
+
+<h4 style="position:absolute; right:40px;top:-5px;">登录</h4>
+
+
 <div class="slideshow-container">
   <div class="mySlides fade">
     <img src="https://compass-ssl.xbox.com/assets/54/f2/54f2ef99-ab48-43f6-9f8f-015c8d24c8f0.jpg?n=Jump_In_Screenshot.jpg" style="width:100%">
@@ -334,11 +526,13 @@ div.move{
     <div class="text3">购惊喜， 畅欢乐</div>
     <div class="text4">双十一狂欢，Xbox主机以旧</div>
     <div class="text6">换新享100元额外优惠</div>
+    <button class="button2" onclick="window.location.href = 'https://www.microsoftstore.com.cn/double-11?WT.mc_id=msftcn_XBOXCOM_HP_double11_201810'">微软官方商城 ></button>
   </div>
  
   <div class="mySlides fade">
     <img src="https://compass-ssl.xbox.com/assets/bf/3d/bf3d90d1-b573-4eb0-a20f-3b330a387d70.jpg?n=784523_Superhero-1084_1920x720.jpg" style="width:100%">
     <div class="text5">极限竞速：地平线4</div>
+    <button class="button3" onclick="window.location.href = 'https://www.xbox.com/zh-CN/games/forza-horizon-4'">立即购买 ></button>
   </div>
  
   <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -352,23 +546,61 @@ div.move{
   <span class="dot" onclick="currentSlide(3)"></span> 
 </div>
 
+<div class="word_container">
 
- 
-<ul class="box_smallimg">
-<li class="smallimg"><img src="https://compass-ssl.xbox.com/assets/59/b5/59b55110-f43c-483c-aa6d-891ed8a3848a.svg?n=Homepage-FY18_Home-Icons-0_Consoles_72x56.svg" ></li>
-<li class="smallimg"><img src="https://compass-ssl.xbox.com/assets/01/88/0188d0c0-ded9-494f-bc02-5b91459d91a3.svg?n=Homepage-FY18_Home-Icons-0_Games_72x56.svg" ></li>
-<li class="smallimg"><img src="https://compass-ssl.xbox.com/assets/8b/76/8b768a46-9bc2-4f47-b019-fbc12e57f39d.svg?n=Homepage-FY18_Home-Icons-0_Accessories_72x56.svg"></li>
-<li class="smallimg"><img src="https://compass-ssl.xbox.com/assets/16/d6/16d60dd2-3e50-4df9-a0e3-21ccce5217ce.svg?n=Homepage-FY18_Home-Icons-0_Community_72x56.svg" ></li>
+    <a href="https://www.xbox.com/xbox-one/consoles"><div class="botton_word  box">主机</div></a>
+    <a href="https://www.xbox.com/games/xbox-one"><div class="botton_word  box">游戏</div></a>
+    <a href="https://www.xbox.com/xbox-one/accessories"><div class="botton_word  box">配件</div></a>
+    <a href="https://www.xbox.com/live/"><div class="botton_word  box">Xbox Live</div></a>
+    <a href="https://www.xbox.com/live/"><div class="botton_word  box">MY ACCOUNT</div></a>
+    
+</div>
 
-</ul>
 
-<img src="https://compass-ssl.xbox.com/assets/f5/a7/f5a7cd0f-3803-40fd-a6ad-06685409b896.jpg?n=OWotW_Large-tout-0_1083x1222.jpg" alt="精灵与萤火意志" style="width:49.5%; height: 50%; float: left;  >
-<img src="https://compass-ssl.xbox.com/assets/cb/f3/cbf3af1c-7df0-4f93-ad81-1684df54679d.jpg?n=PUBG-1067x600.jpg"  alt="绝地求生" style="width:25%;height:380px;float:right;">
-<div class="move">
-<img src="https://compass-ssl.xbox.com/assets/10/e6/10e62455-459d-48f7-ba95-4ac87dc22ad6.jpg?n=SoT.jpg" alt="盗贼之海"  style="width:50% ; height:50%; float: right">
+<div class="img_container">
+
+        <a href="https://www.xbox.com/xbox-one/consoles"><div class="box"><img src="https://compass-ssl.xbox.com/assets/59/b5/59b55110-f43c-483c-aa6d-891ed8a3848a.svg?n=Homepage-FY18_Home-Icons-0_Consoles_72x56.svg" style="width:100px; height:100px;"></div></a>
+        <a href="https://www.xbox.com/games/xbox-one"><div class="box"><img src="https://compass-ssl.xbox.com/assets/01/88/0188d0c0-ded9-494f-bc02-5b91459d91a3.svg?n=Homepage-FY18_Home-Icons-0_Games_72x56.svg" style="width:100px; height:100px;"></div></a>
+        <a href="https://www.xbox.com/xbox-one/accessories"><div class="box"><img src="https://compass-ssl.xbox.com/assets/8b/76/8b768a46-9bc2-4f47-b019-fbc12e57f39d.svg?n=Homepage-FY18_Home-Icons-0_Accessories_72x56.svg" style="width:100px; height:100px;"></div></a>
+        <a href="https://www.xbox.com/live/"><div class="box"><img src="https://compass-ssl.xbox.com/assets/16/d6/16d60dd2-3e50-4df9-a0e3-21ccce5217ce.svg?n=Homepage-FY18_Home-Icons-0_Community_72x56.svg" style="width:100px; height:100px;"></div></a>
+       
+        
+    </div>
+
+
+
+
+
+
+<img src="https://compass-ssl.xbox.com/assets/cb/f3/cbf3af1c-7df0-4f93-ad81-1684df54679d.jpg?n=PUBG-1067x600.jpg"  alt="绝地求生" style="width:25%;height:280px;float:right;">
+<div class="onmouseover1">
+
+
+
+    <div id="example1">
+        <h5 class="elf">精灵与萤火意志</h5>
+        <a href="https://www.xbox.com/zh-CN/games/sea-of-thieves/home"><p class="elf">了解详情 ></p></a>
+        </div>
+
+    <div id="example2">
+        <h1 class="thief">盗贼之海</h1>
+        <a href="https://www.xbox.com/zh-CN/games/sea-of-thieves/home"><p class="thief">立即选购 ></p></a>
+        </div>
+
+
+
+
+</div>
+<div class="onmouseover2">
 <img src="https://compass-ssl.xbox.com/assets/ef/43/ef43acc1-1223-4035-94b9-5c33cc639f72.jpg?n=Lucky.jpg" alt="超级幸运狐" style="width:25%;height:380px;float:left;">
+</div>
+<div>
 <img src="https://compass-ssl.xbox.com/assets/e7/d4/e7d46aea-90d0-4bf1-9544-cc85d59f6d18.jpg?n=Xbox-Family_Home-Hero-0_FY-18-X1X-Lead_1067x667_02.jpg" style="width:60%; height: 45%; float: left;"> 
 </div>
+
+
+
+
 <script>
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -396,8 +628,6 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block"; 
   dots[slideIndex-1].className += " active";
 }
-
-
 
 
 </script>
