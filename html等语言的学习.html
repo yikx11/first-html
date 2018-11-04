@@ -59,7 +59,7 @@ li a {
 }
  
 
-/* 鼠标移动到选项上修改背景颜色 */
+
 li a:hover {
     background-color: rgb(233, 227, 227);
     color: rgb(5, 4, 4);
@@ -167,10 +167,6 @@ div.botton_word
   color:green;
   text-decoration: underline;
 }
-
-* {box-sizing:border-box}
-body {font-family: Verdana,sans-serif;}
-.mySlides {display:none}
  
 .button1{
 background-color:green; 
@@ -210,15 +206,12 @@ top: 280px;
 
 }
 
-
-/* 幻灯片容器 */
 .slideshow-container {
   max-width: 100%;
   position: relative;
   margin: auto;
 }
  
-/* 下一张 & 上一张 按钮 */
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -233,18 +226,17 @@ top: 280px;
   border-radius: 0 3px 3px 0;
 }
  
-/* 定位 "下一张" 按钮靠右 */
+
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
  
-/* On hover, add a black background color with a little bit see-through */
+
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
  
-/* 标题文本 */
 .text1 {
   color: #f2f2f2;
   font-size: 30px;
@@ -320,7 +312,7 @@ top: 280px;
   font-family:"Segoe UI",SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
  
-/* 标记符号 */
+
 .dot {
   cursor:pointer;
   height: 13px;
@@ -335,15 +327,6 @@ top: 280px;
  
 .active.dot:hover {
   background-color: #717171;
-}
-
-.box_smallimg
-{
-  display: flex;
-  widows: 10px; 
-  height:10px;
-  flex-direction: row;
-  
 }
 
 .box_button
@@ -664,37 +647,6 @@ p.bottom
 <p style="z-index:1;position: absolute;top: 3300px; left:50px; color: white;"><a href="https://www.microsoft.com/zh-cn/store/p/帝国时代-决定版/9n2kmdvlk85d" style="color:white;text-decoration:none;">立即购买 ></a></p>
 
 
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
- 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
- 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
- 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1} 
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none"; 
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block"; 
-  dots[slideIndex-1].className += " active";
-}
-
-</script>
-
-
 
 <div class="box_button">
 <h4 class="line_button"><em> * 以上所提及各项游戏特性和配置要求仍在开发中，发售前或有所改变。实际发售的游戏受限于中国法律所要求的审批。<br></em></h4>
@@ -733,10 +685,39 @@ function showSlides(n) {
     <a style="text-decoration:none;color:black;" href="https://www.xbox.com/zh-CN/#">京公网安备11010802023178  </a>
     <a style="text-decoration:none;color:black;">© Microsoft2018</a>
     </div>
-  
-
 
 </div>
 
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+     
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+     
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+     
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1} 
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none"; 
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block"; 
+      dots[slideIndex-1].className += " active";
+    }
+    
+</script>
+    
+    
 </body>
 </html>
